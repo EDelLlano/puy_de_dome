@@ -333,6 +333,16 @@ function moverBoton(){
 }
 
 botonNo.addEventListener("mouseenter", moverBoton);
+    
+    botonNo.addEventListener("touchstart", (e) => {
+    e.preventDefault();
+    moverBoton();
+});
+
+botonNo.addEventListener("click", (e) => {
+    e.preventDefault();
+    moverBoton();
+});
 
 botonSi.addEventListener("click", () => {
 
